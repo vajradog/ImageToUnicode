@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@vajradog's Image to Unicode Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>@vajradog's Image to Unicode Converter</h1>
+      <input type="file" id="upload" accept="image/*" />
+      <label for="detail">Detail Level:</label>
+      <input type="range" id="detail" min="1" max="20" value="10" />
+      <br /><label for="speech">Text for Conversion:</label>
+      <textarea id="speech" rows="4" cols="50">
+The ultimate source of happiness is not money and power, but warm-heartedness.</textarea
+      >
+      <div class="zoom-controls">
+        <button id="zoomInBtn">Zoom In</button>
+        <button id="zoomOutBtn">Zoom Out</button>
+      </div>
+      <canvas id="canvas"></canvas>
+      <div id="output-container">
+        <pre id="output"></pre>
+      </div>
+      <button id="downloadBtn">Download as Image</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+  <footer>
+    <p>
+      Enjoy using the generated images! Feel free to use them in any way you
+      please. If you share your creations, a credit to
+      <a href="https://github.com/vajradog">@vajradog</a> would be appreciated.
+    </p>
+  </footer>
+</html>
